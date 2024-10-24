@@ -1,16 +1,20 @@
-import { useState } from 'react'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import './App.css'
 
-import Login from './pages/Auth/Login.jsx'
-import HomePage from './pages/Home/HomePage.jsx'
-import Profile from './pages/Profile/Profile.jsx'
+import Login from './pages/auth/Login.jsx'
+import HomePage from './pages/home/HomePage.jsx'
+import Profile from './pages/profile/Profile.jsx'
+
+import Sidebar from './components/sidebar/Sidebar.jsx'
+import { useState } from 'react'
 
 const App = () => {
-    const [count, setCount] = useState(0)
+    // Change this to useContext (create a new context)
+    const [auth, useAuth] = useState(false);
 
     return (
         <BrowserRouter>
+            <Sidebar/>
             <Routes>
                 <Route>
                     <Route path="/" element={<Login/>}/>
