@@ -1,9 +1,15 @@
+import ChatList from './ChatList'
+import ChatWindow from './ChatWindow.jsx'
+import { useState } from 'react'
+import chats from '../../data/Chats.jsx'
+
 const HomePage = () => {
+    const [selectedChat, setSelectedChat] = useState(chats[0].name);
+
     return (
         <>
-            <div>
-                <h1>Home</h1>
-            </div>
+            <ChatList chats={chats} setSelectedChat={setSelectedChat}/>
+            <ChatWindow selectedChat={selectedChat}/>
         </>
     )
 }

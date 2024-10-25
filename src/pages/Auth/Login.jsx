@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom"
 import { useAuthContext } from "../../hooks/useAuthContext" 
+import "./Login.css"
 
 const Login = () => {
     const { setAuth } = useAuthContext();
@@ -10,7 +11,7 @@ const Login = () => {
 
     return (
         <>
-            <div>
+            <div id="login">
                 <Link to="/home" onClick={handleLogin}>Login</Link>
             </div>
         </>
