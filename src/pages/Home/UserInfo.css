@@ -1,5 +1,5 @@
 #user-info {
     border: 1px #000000 solid;
-    margin-left: 0;
-    float: right;
+    /* TODO: Fix this to scale better */
+    min-width: 250px;
 }

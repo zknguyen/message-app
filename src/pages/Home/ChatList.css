@@ -2,6 +2,7 @@
     height: 100vh;
     color: #000000;
     background-color: #D3D3D3;
+    /* TODO: Fix this to scale better */
     min-width: 250px;
 }
 

@@ -1,4 +1,26 @@
 #chat-window {
     float: none;
-    overflow: hidden;
+    width: 100%;
+    position: relative;
+    padding: 20px;
+}
+
+#chat-window-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+#toggle-display-user-info-btn {
+    height: 30px;
+    align-self: center;
+}
+
+#message-input {
+    height: 30px;
+    border-radius: 10px;
+    border: none;
+    width: 80%;
+    position: absolute;
+    right: 20px;
+    bottom: 50px;
 }
