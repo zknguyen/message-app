@@ -1,5 +1,7 @@
 #user-info {
-    border: 1px #000000 solid;
+    background-color: #242424;
+    border-radius: 10px;
+    margin: 5px;
     /* TODO: Fix this to scale better */
     min-width: 250px;
 }

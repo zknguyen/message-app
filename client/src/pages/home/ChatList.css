@@ -1,0 +1,27 @@
+#chat-list {
+    height: 100vh;
+    color: #FFFFFF;
+    background-color: #242424;
+    border-radius: 10px;
+    margin: 5px;
+    /* TODO: Fix this to scale better */
+    min-width: 250px;
+}
+
+#chat-list-chats {
+    height: 90%;
+    overflow-y: scroll;
+}
+
+.chat-list-chat {
+    height: 60px;
+    text-align: left;
+    padding: 2px 20px;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+.chat-list-chat:hover {
+    cursor: pointer;
+    background-color: #2F2F2F;
+}
