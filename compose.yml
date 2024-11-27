@@ -1,0 +1,24 @@
+version: "3.4"
+services:
+ client:
+   image: client
+   container_name: client
+   ports:
+     - 8000:8000
+   working_dir: /srv/app/client
+   volumes:
+     - type: bind
+       source: ./
+       target: /srv/app
+   tty: true
+ server:
+   image: server
+   container_name: server
+   ports:
+     - 3000:3000
+   working_dir: /srv/app/server
+   volumes:
+     - type: bind
+       source: ./
+       target: /srv/app
+   tty: true
